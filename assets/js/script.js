@@ -79,7 +79,7 @@ function showProductDetails(productId) {
     <img src="${product.image}" alt="${product.name}">
     <p class="description">${product.description}</p>`
 
-    detailsModal.style.display = 'block';
+    detailsModal.style.display = 'flex';
 }
 
 function closeProductDetails() {
