@@ -92,15 +92,23 @@ footer {
     background: var(--text-color);
     color: var(--bg-color);
     margin: 0 auto;
-}
-
-footer :where(h6, p) {
-    color: inherit;
     text-align: center;
 }
 
-footer p {
+footer p{
     font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+footer .fa-whatsapp{
+    font-size: 2.7rem;
+    margin-right: 20px;
+    color: #128C7E;
+}
+
+footer .fa-envelope{
+    color: var(--accent-color);
+    font-size: 2.5rem;
 }
 
 .product-item {
