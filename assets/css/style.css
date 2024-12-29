@@ -183,9 +183,81 @@ footer p{
     grid-template-columns: repeat(4, 1fr);
 }
 
+.burger{
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 300ms ease;
+}
+
+.burger div{
+    width: 30px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 6px 0;
+    transition: all 300ms ease;
+}
+
 @media (max-width: 768px){
     html{
         font-size: 55%;
+    }
+
+    nav{
+        position: absolute;
+        right: 0px;
+        top: 0;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.95);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        max-width: 400px;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+    }
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        opacity: 0;
+        transform: translateX(50%);
+        transition: all 500ms ease;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+    .nav-active li{
+        opacity: 1;
+        transform: translateX(0);
+        transition-delay: 200ms;
+    }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+
+    .toggle .line2{
+        opacity: 0;
+    }
+
+    .toggle .line3{
+        transform: rotate(45deg) translate(-7px, -6px);
+    }
+
+    .burger{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
     }
 
     .grid{
