@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const products = [
     { id: 1, name: "Bolsa Geométrica em Square", image: 'assets/img/bolsa-geometrica-square.png', description: 'Bolsa de crochê feita a mão, ideal para o uso diário.' },
     { id: 2, name: "Bolsa Saco de Barbante", image: 'assets/img/bolsa-saco-barbante.png', description: 'Bolsa de crochê feita a mão, ideal para o uso diário.' },
-    { id: 3, name: "Bolsa Tiracolo", image: 'assets/img/bolsa-tira-colo.png', description: 'Bolsa de crochê feita a mão, ideal para o uso em festas.' }
+    { id: 3, name: "Bolsa Tiracolo", image: 'assets/img/bolsa-tira-colo.png', description: 'Bolsa de crochê feita a mão, ideal para eventos festivos.' }
 ]
 
 function displayProducts() {
