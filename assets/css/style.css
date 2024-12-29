@@ -161,10 +161,12 @@ footer p{
 
 .contact-container .fa-whatsapp{
     color: #128C7E;
+    cursor: pointer;
+    font-size: 25px;
 }
 
 .contact-container .fa-envelope{
-    font-size: 2.2rem;
+    font-size: 22px;
 }
 
 .menu {
