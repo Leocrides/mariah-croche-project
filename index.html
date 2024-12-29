@@ -17,9 +17,7 @@
     <div class="menu-spacing" id="home"></div>
     <header>
         <div class="menu">
-            <a href="#" id="home"><img
-                    src="assets/img/croche-logo.svg"
-                    alt="Logotipo d"></a>
+            <a href="#" id="home"><img src="assets/img/croche-logo.svg" alt="Logotipo d"></a>
             <nav>
                 <ul>
                     <li><a href="#home">Início</a></li>
@@ -31,14 +29,10 @@
         </div>
     </header>
     <main>
-        <img id="crochets" src="assets/img/croche-bg.svg"
-            alt="Banner da Mariah Crochês">
+        <img id="crochets" src="assets/img/croche-bg.svg" alt="Banner da Mariah Crochês">
         <div class="container">
             <h1>Crochês</h1>
-            <section class="grid">
-                <article>
-                    <h6>Bolsa de crochê feita a mão</h6>
-                </article>
+            <section class="grid" id="product-list">
             </section>
         </div>
     </main>
@@ -56,14 +50,20 @@
 
     <div class="contact-container" id="contact">
         <h3>Informações para contato:</h3>
-        <p><a href="mailto:mariahriguete@hotmail.com?subject=Contato%20via%20Site&body=Olá,%20gostaria%20de%20entrar%20em%20contato." target="_blank"><i class="fas fa-envelope"></i></a> mariahriguete@hotmail.com</p>
-        <p><a href="https://wa.me/5532984684491" target="_blank"><i class="fab fa-whatsapp"></i></a> (32) 98468-4491</p>
+        <p><a href="mailto:mariahriguete@hotmail.com?subject=Contato%20via%20Site&body=Olá,%20gostaria%20de%20entrar%20em%20contato."
+                aria-label="Enviar e-mail" target="_blank"><i class="fas fa-envelope"></i></a> mariahriguete@hotmail.com
+        </p>
+        <p><a href="https://wa.me/5532984684491" aria-label="Contato via WhatsApp" target="_blank"><i
+                    class="fab fa-whatsapp"></i></a> (32) 98468-4491</p>
+        <p><i class="fas fa-location-dot"></i>Cataguases, MG</p>
+    </div>
+    <div id="product-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductDetails()">&times;</span>
+            <div id="product-details-content"></div>
+        </div>
     </div>
 
-    <footer>
-        <h6>Mariah Crochês</h6>
-        <p>&copy; 2024 | Todos os direitos reservados.</p>
-    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>
