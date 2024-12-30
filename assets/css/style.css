@@ -369,7 +369,7 @@ footer .fa-envelope{
     }
 
     .menu-spacing{
-        display: none;
+        height: 0.1px;
     }
 
     .nav-active {
