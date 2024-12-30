@@ -49,9 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const products = [
-    { id: 1, name: "Bolsa Geométrica em Square", image: 'assets/img/bolsa-geometrica-square.png', description: 'Bolsa de crochê feita a mão, usando o material de barbante, ideal para o uso diário.' },
-    { id: 2, name: "Bolsa Saco de Barbante", image: 'assets/img/bolsa-saco-barbante.png', description: 'Bolsa de crochê feita a mão, usando o material barbante, ideal para o uso diário.' },
-    { id: 3, name: "Bolsa<br> Tiracolo", image: 'assets/img/bolsa-tira-colo.png', description: 'Bolsa de crochê feita a mão, usando o material de fio náutico, ideal para eventos festivos.' }
+    { id: 1, name: "Bolsa Geométrica em Square", image: 'assets/img/bolsa-geometrica-square.png', description: 'Bolsa de crochê, ideal para o uso diário.', material: 'Barbante', madeWith: 'Feito a mão' },
+    { id: 2, name: "Bolsa Saco de Barbante", image: 'assets/img/bolsa-saco-barbante.png', description: 'Bolsa de crochê, ideal para o uso diário.', material: 'Barbante', madeWith: 'Feito a mão' },
+    { id: 3, name: "Bolsa<br> Tiracolo", image: 'assets/img/bolsa-tira-colo.png', description: 'Bolsa de crochê, ideal para eventos festivos.', material: 'Fio Náutico', madeWith: 'Feito a mão' }
 ]
 
 function displayProducts() {
@@ -76,7 +76,7 @@ function showProductDetails(productId) {
 
     detailsContent.innerHTML = `<h2>${product.name}</h2>
     <img src="${product.image}" alt="${product.name}">
-    <p class="description">${product.description}</p>`
+    <p class="description">${product.description}<br> Material: ${product.material}<br> Produção: ${product.madeWith}</p>`
 
     detailsModal.style.display = 'flex';
 }
