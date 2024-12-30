@@ -5,9 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const nav = document.querySelector('nav');
     const navLinks = document.querySelectorAll('li')
-    const menu = document.querySelector('.menu');
 
-    menu.insertBefore(burger, nav);
+    nav.parentNode.insertBefore(burger, nav);
 
     function toggleMenu() {
         nav.classList.toggle('nav-active');
